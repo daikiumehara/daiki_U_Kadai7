@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ViewController" customModule="Kadai7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cJL-u5-ARA">
+                                <rect key="frame" x="158.5" y="64" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="LeR-m4-3cE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynH-su-DxU">
+                                <rect key="frame" x="184" y="172" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8rx-LR-SVI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O62-af-9Fe">
+                                <rect key="frame" x="186" y="222" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rkF-zf-P9f">
+                                <rect key="frame" x="158.5" y="118" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="csA-kT-vDt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O62-af-9Fe" firstAttribute="top" secondItem="ynH-su-DxU" secondAttribute="bottom" constant="20" id="F63-i4-zIA"/>
+                            <constraint firstItem="ynH-su-DxU" firstAttribute="top" secondItem="rkF-zf-P9f" secondAttribute="bottom" constant="20" id="Lvc-D9-2VC"/>
+                            <constraint firstItem="rkF-zf-P9f" firstAttribute="centerX" secondItem="cJL-u5-ARA" secondAttribute="centerX" id="ehd-23-5Sl"/>
+                            <constraint firstItem="cJL-u5-ARA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="pQR-nA-0UX"/>
+                            <constraint firstItem="ynH-su-DxU" firstAttribute="centerX" secondItem="cJL-u5-ARA" secondAttribute="centerX" id="qRY-hg-z09"/>
+                            <constraint firstItem="O62-af-9Fe" firstAttribute="centerX" secondItem="cJL-u5-ARA" secondAttribute="centerX" id="tBo-d6-oti"/>
+                            <constraint firstItem="rkF-zf-P9f" firstAttribute="top" secondItem="cJL-u5-ARA" secondAttribute="bottom" constant="20" id="w93-GF-SM5"/>
+                            <constraint firstItem="cJL-u5-ARA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wtT-fO-106"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="B0I-Y0-4nY"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="O62-af-9Fe" id="Num-Z0-LP5"/>
+                        <outletCollection property="textFields" destination="cJL-u5-ARA" collectionClass="NSMutableArray" id="Hmj-Ec-eyG"/>
+                        <outletCollection property="textFields" destination="rkF-zf-P9f" collectionClass="NSMutableArray" id="moq-qn-KKJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
