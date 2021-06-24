@@ -20,6 +20,7 @@
 		A606EFDE26836110009B848F /* SubtractionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606EFDD26836110009B848F /* SubtractionModel.swift */; };
 		A606EFE126836277009B848F /* CalculateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606EFE026836277009B848F /* CalculateProtocol.swift */; };
 		A606EFE32683655B009B848F /* CalculateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606EFE22683655B009B848F /* CalculateModel.swift */; };
+		A606EFE526837DC0009B848F /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606EFE426837DC0009B848F /* TabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A606EFDD26836110009B848F /* SubtractionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionModel.swift; sourceTree = "<group>"; };
 		A606EFE026836277009B848F /* CalculateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateProtocol.swift; sourceTree = "<group>"; };
 		A606EFE22683655B009B848F /* CalculateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateModel.swift; sourceTree = "<group>"; };
+		A606EFE426837DC0009B848F /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				A606EFAA26835CB6009B848F /* ViewController.swift */,
+				A606EFE426837DC0009B848F /* TabViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A606EFE526837DC0009B848F /* TabViewController.swift in Sources */,
 				A606EFE126836277009B848F /* CalculateProtocol.swift in Sources */,
 				A606EFDE26836110009B848F /* SubtractionModel.swift in Sources */,
 				A606EFAB26835CB6009B848F /* ViewController.swift in Sources */,

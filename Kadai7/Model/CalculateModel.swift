@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CalculateModel: NSObject {
+final class CalculateModel: NSObject {
     enum Calclator: Int, CaseIterable {
         case addition ,subtraction
 

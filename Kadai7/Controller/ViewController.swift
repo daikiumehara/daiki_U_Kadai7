@@ -7,18 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet var textFields: [UITextField]!
-    @IBOutlet var answerLabel: UILabel!
-    var model = CalculateModel()
+final class ViewController: UIViewController {
+    @IBOutlet private var textFields: [UITextField]!
+    @IBOutlet private var answerLabel: UILabel!
+    private var model = CalculateModel()
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.model.setModel(self.tabBarController?.selectedIndex)
-        self.view.backgroundColor = model.calculator.backgroundColor
-    }
-
-    @IBAction func didTapButton(_ sender: Any) {
+    @IBAction private func didTapButton(_ sender: Any) {
         textFields.forEach { $0.endEditing(true) }
         let firstValue = Int(textFields[0].text!) ?? 0
         let secondValue = Int(textFields[1].text!) ?? 0
@@ -26,5 +20,9 @@ class ViewController: UIViewController {
         answerLabel.text = String(answer)
     }
 
+    func configure(index: Int) {
+        self.model.setModel(index)
+        self.view.backgroundColor = model.calculator.backgroundColor
+    }
 }
 
