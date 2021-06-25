@@ -21,10 +21,9 @@ final class CalculateModel: NSObject {
         }
     }
     private(set) var calculator: CalculateProtocol!
-    func setModel(_ index: Int?) {
+    static func getCalculateModel(_ index: Int?) -> CalculateProtocol {
         let index = index ?? 0
-        print(index)
         let calc = Calclator(rawValue: index) ?? Calclator(rawValue: 0)!
-        self.calculator = calc.model
+        return calc.model
     }
 }
