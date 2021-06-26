@@ -9,5 +9,5 @@ import UIKit
 
 protocol CalculateProtocol: AnyObject {
     var backgroundColor: UIColor { get }
-    var calculate: (Int, Int) -> Int { get }
+    func calculate(first: Int, second: Int) -> Int
 }

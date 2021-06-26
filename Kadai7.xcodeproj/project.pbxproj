@@ -19,7 +19,6 @@
 		A606EFDC268360E4009B848F /* AdditionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606EFDB268360E4009B848F /* AdditionModel.swift */; };
 		A606EFDE26836110009B848F /* SubtractionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606EFDD26836110009B848F /* SubtractionModel.swift */; };
 		A606EFE126836277009B848F /* CalculateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606EFE026836277009B848F /* CalculateProtocol.swift */; };
-		A606EFE32683655B009B848F /* CalculateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606EFE22683655B009B848F /* CalculateModel.swift */; };
 		A606EFE526837DC0009B848F /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606EFE426837DC0009B848F /* TabViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +58,6 @@
 		A606EFDB268360E4009B848F /* AdditionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionModel.swift; sourceTree = "<group>"; };
 		A606EFDD26836110009B848F /* SubtractionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionModel.swift; sourceTree = "<group>"; };
 		A606EFE026836277009B848F /* CalculateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateProtocol.swift; sourceTree = "<group>"; };
-		A606EFE22683655B009B848F /* CalculateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateModel.swift; sourceTree = "<group>"; };
 		A606EFE426837DC0009B848F /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +145,6 @@
 			children = (
 				A606EFDB268360E4009B848F /* AdditionModel.swift */,
 				A606EFDD26836110009B848F /* SubtractionModel.swift */,
-				A606EFE22683655B009B848F /* CalculateModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,7 +312,6 @@
 				A606EFAB26835CB6009B848F /* ViewController.swift in Sources */,
 				A606EFA726835CB6009B848F /* AppDelegate.swift in Sources */,
 				A606EFA926835CB6009B848F /* SceneDelegate.swift in Sources */,
-				A606EFE32683655B009B848F /* CalculateModel.swift in Sources */,
 				A606EFDC268360E4009B848F /* AdditionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
